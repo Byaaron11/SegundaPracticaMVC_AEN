@@ -1,0 +1,23 @@
+﻿<h1 class="display-1 text-center text-primary">
+    Create
+</h1>
+<hr/>
+<div class="container container-fluid">
+    <form method="post">
+        <label class="form-label">Nombre</label>
+        <input type="text" name="nombre" class="form-control" />
+        <label class="form-label">Imagen</label>
+        <input type="text" name="imagen" class="form-control" />
+        <label class="form-label">Descripción</label>
+        <input type="text" name="descripcion" class="form-control" />
+        <button class="btn btn-outline-primary mt-3">
+            Añadir Comic
+        </button>
+    </form>
+</div>
+<hr/>
+<div class="container container-fluid d-flex justify-content-center">
+    <a asp-action="Index" asp-controller="Comics" class="btn btn-secondary">
+        Volver a la lista
+    </a>
+</div>
