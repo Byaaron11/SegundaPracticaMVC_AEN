@@ -51,9 +51,9 @@ namespace SegundaPracticaMVC_AEN.Repositories
 
         public void InsertarComic(string nombre, string imagen, string descripcion)
         {
-            OracleParameter pamnombre = new OracleParameter("@NOMBRE", nombre);
-            OracleParameter pamimg = new OracleParameter("@IMAGEN", imagen);
-            OracleParameter pamdesc = new OracleParameter("@DESCRIPCION", descripcion);
+            OracleParameter pamnombre = new OracleParameter("P_NOMBRE", nombre);
+            OracleParameter pamimg = new OracleParameter("P_IMAGEN", imagen);
+            OracleParameter pamdesc = new OracleParameter("P_DESCRIPCION", descripcion);
             this.com.Parameters.Add(pamnombre);
             this.com.Parameters.Add(pamimg);
             this.com.Parameters.Add(pamdesc);
